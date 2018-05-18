@@ -4,29 +4,155 @@ of which NativeScript renders with a platform-specific iOS or Android native con
 You can find a full list of user interface components you can use in your app at
 https://docs.nativescript.org/ui/components.
 -->
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
-    <!--
-    The ActionBar is the NativeScript common abstraction over the Android ActionBar and iOS NavigationBar.
-    http://docs.nativescript.org/ui/action-bar
-    -->
-    <Page.actionBar>
-        <ActionBar title="My App" icon="" class="action-bar">
-        </ActionBar>
-    </Page.actionBar>
-    <!--
-    The StackLayout stacks UI components on the screen—either vertically or horizontally.
-    In this case, the StackLayout does vertical stacking; you can change the stacking to
-    horizontal by applying a orientation="horizontal" attribute to the <StackLayout> element.
-    You can learn more about NativeScript layouts at
-    https://docs.nativescript.org/ui/layout-containers.
-
-    These components make use of several CSS class names that are part of the NativeScript
-    core theme, such as p-20, btn, h2, and text-center. You can view a full list of the
-    class names available for styling your app at https://docs.nativescript.org/ui/theme.
-    -->
-    <StackLayout class="p-20">
-        <Label text="Tap the button" class="h1 text-center"/>
-        <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
-        <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
-    </StackLayout>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" cssFile="~/assets/vertical/theme.css">
+<Page.actionBar>
+    <ActionBar title="Game Lobby" class="header"/>
+</Page.actionBar>
+<ScrollView class="frame">
+    <StackLayout id="gameListContainer" class="slidee" style="list-style: none; overflow: hidden; white-space: nowrap;" orientation="vertical">
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game22.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="西游 (豪华版)" class="title"/>
+                    <Label text="(RTP: 96.00%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game19.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="仙翁游 2" class="title"/>
+                    <Label text="(RTP: 96.00%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game9.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="十二生笑" class="title"/>
+                    <Label text="(RTP: 96.32%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game5.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="功夫擂台" class="title"/>
+                    <Label text="(RTP: 96.00%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game15.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="斗地主" class="title"/>
+                    <Label text="(RTP: 96.05%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game13.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="我是土豪" class="title"/>
+                    <Label text="(RTP: 96.00%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game20.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="楚汉争霸" class="title"/>
+                    <Label text="(RTP: 96.00%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game3.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="仙翁游" class="title"/>
+                    <Label text="(RTP: 96.00%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game16.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="西游" class="title"/>
+                    <Label text="(RTP: 95.99%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game17.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="楚汉争霸 3D" class="title"/>
+                    <Label text="(RTP: 95.97%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+        <FlexboxLayout width="100%" class="game">
+            <Image src="~/assets/vertical/en-us/game14.png" width="80" height="80"/>
+            <StackLayout class="controlBox">
+                <StackLayout class="game-desc">
+                    <Label text="国士无双" class="title"/>
+                    <Label text="(RTP: 95.95%)" class="sub-title"/>
+                </StackLayout>
+                <FlexboxLayout class="link hide">
+                    <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>
+                    <Button text="PLAY FOR REAL" tap="{{ onTap }}" class="pfr link-button"/>
+                </FlexboxLayout>
+            </StackLayout>
+        </FlexboxLayout>
+    </StackLayout>    
+</ScrollView>
 </Page>

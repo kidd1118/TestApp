@@ -1,0 +1,164 @@
+body, div, ul, li, th, td, p br, h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+	font-family: Tahoma, Geneva, sans-serif, "Noto Sans CJK SC", "Microsoft YaHei", "Source Han Sans CN", "SimHei", "微軟正黑體";
+}
+
+body {
+	background-image: url(bg.png);
+}
+
+ol, ul {
+	list-style: none outside none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.frame {
+	background-image: url("~/assets/vertical/bg.png");
+}
+
+.header {
+	background-color: #011b00;
+	color: white;
+	height: 8vw;
+	line-height: 8vw;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 5vw;
+	letter-spacing: 1px;
+	border: 1px solid #004700;
+	padding: 10px;
+}
+
+.game {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #004700;
+	display: flex;
+	padding-top: 5px;
+	padding-right: 0;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	letter-spacing: 1px;
+	align-items: center;
+}
+
+.logo {
+	width: 20vw;
+	height: 20vw;
+}
+
+.game-desc .title,
+.game-desc .sub-title {
+	vertical-align: middle;
+	color: #fff;
+	white-space: nowrap;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+.game-desc .title {
+	font-size: 16;
+}
+
+.game-desc .sub-title {
+	font-size: 12;
+	font-weight: normal;
+}
+
+.link,
+.game-desc {
+	margin-left: 10px;
+	clear: both;
+}
+
+.link .pfr,
+.link .pff {
+	line-height: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	border-radius: 10;
+	font-size: 12;
+	box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.5);
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+	float: left;
+	min-width: 100px;
+}
+
+.link-button{
+	width: 100;
+	height: 40;
+	padding-top: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+
+@media (orientation: landscape) {
+
+	.link-button {
+		width: 140;
+	}
+}
+
+.link .pfr {
+	background-color: #ffd541;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #fac809;
+	color: black;
+}
+
+.link .pff {
+	background-color: #015601;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #fcff7a;
+	color: white;
+}
+
+#paginationContainer {
+	display: none;
+}
+
+.upperShades {
+	display: none;
+}
+
+.topDecoration1 {
+	display: none;
+}
+
+.topDecoration1 {
+	display: none;
+}
+
+.topDecoration3 {
+	display: none;
+}
+
+.notice {
+	display: none;
+}
+
+.bottomDecoration {
+	display: none;
+}
+
+.leftShade {
+	display: none;
+}
+
+.rightShade {
+	display: none;
+}
+
