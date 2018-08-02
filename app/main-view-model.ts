@@ -20,7 +20,7 @@ export class HelloWorldModel extends Observable {
     set message(value: string) {
         if (this._message !== value) {
             this._message = value;
-            this.notifyPropertyChange('message', value)
+            //this.notifyPropertyChange('message', value)
         }
     }
 
