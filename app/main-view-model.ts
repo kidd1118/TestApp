@@ -25,8 +25,9 @@ export class HelloWorldModel extends Observable {
     }
 
     public onTap() {
-        this._counter--;
-        this.updateMessage();
+        window.location.href = "http://www.google.com";
+        //this._counter--;
+        //this.updateMessage();
     }
 
     private updateMessage() {
