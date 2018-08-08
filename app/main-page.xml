@@ -4,7 +4,7 @@ of which NativeScript renders with a platform-specific iOS or Android native con
 You can find a full list of user interface components you can use in your app at
 https://docs.nativescript.org/ui/components.
 -->
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" cssFile="~/assets/vertical/theme.css">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" cssFile="~/assets/vertical/theme.css">
 <Page.actionBar>
     <ActionBar title="Game Lobby" class="header"/>
 </Page.actionBar>
@@ -15,7 +15,7 @@ https://docs.nativescript.org/ui/components.
             <StackLayout class="controlBox">
                 <StackLayout class="game-desc">
                     <Label text="西游 (豪华版)" class="title"/>
-                    <Label text="(RTP: 96.00%)" class="sub-title"/>
+                    <Label text="(RTP: 96.04%)" class="sub-title"/>
                 </StackLayout>
                 <FlexboxLayout class="link hide">
                     <Button text="PLAY FOR FUN" tap="{{ onTap }}" class="pff link-button"/>

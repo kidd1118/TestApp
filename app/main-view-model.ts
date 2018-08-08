@@ -1,5 +1,7 @@
 import { Observable } from 'data/observable';
+import * as dialogs from "ui/dialogs";
 
+declare var com: any;
 export class HelloWorldModel extends Observable {
 
     private _counter: number;
@@ -25,9 +27,13 @@ export class HelloWorldModel extends Observable {
     }
 
     public onTap() {
-        window.location.href = "http://www.google.com";
+        dialogs.alert("onTap").then(()=> {
+            var games = new com.example.mylibrary();
+            console.log("Dialog closed!");
+        });
+        //var games = new com.example.mylibrary();
         //this._counter--;
-        //this.updateMessage();
+        this.updateMessage();
     }
 
     private updateMessage() {
