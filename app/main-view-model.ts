@@ -27,8 +27,7 @@ export class HelloWorldModel extends Observable {
     }
 
     public onTap() {
-        dialogs.alert("onTap").then(()=> {
-            var games = new com.example.mylibrary();
+        dialogs.alert("LeoTest").then(()=> {
             console.log("Dialog closed!");
         });
         //var games = new com.example.mylibrary();
