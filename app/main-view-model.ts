@@ -30,9 +30,9 @@ export class HelloWorldModel extends Observable {
         dialogs.alert("LeoTest").then(()=> {
             console.log("Dialog closed!");
         });
-        //var games = new com.example.mylibrary();
+        //var games = new com.xuenn.cas();
         //this._counter--;
-        this.updateMessage();
+        //this.updateMessage();
     }
 
     private updateMessage() {
